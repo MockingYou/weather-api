@@ -11,24 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.render('index', {
-        title: 'Weather App',
-        name: 'Gigel'
-    })
-})
-
-app.get('/about', (req, res) => {
-    res.render('about', {
-        title: 'About',
-        name: 'nu zic'
-    })
-})
-
-app.get('/help', (req, res) => {
-    res.render('help', {
-        title: 'Help',
-        name: 'Marmelada'
-    })
+    res.send("Ok!")
 })
 
 app.get('/weather', (req, res) => {
